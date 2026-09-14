@@ -40,7 +40,7 @@ public class AlunoController {
 	@PostMapping(path = "/alunos/param")
 	public ResponseEntity<String> createString(@RequestParam String nome, @RequestParam String email) {
 		
-		log.info("createString( " + nome + ", " + email + " )");
+		log.debug("createString( " + nome + ", " + email + " )");
 		
 		try {
 			Aluno a = new Aluno(nome, email);
